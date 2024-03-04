@@ -1,0 +1,193 @@
+body, .main-container {
+    background-color: #fbfbfb;
+}
+.chatui {
+    display: flex;
+    position: fixed; 
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 70vw;
+    height: 100vh; 
+    margin: 0; 
+    border: none; 
+    border-radius: 0; 
+    background-color: #fbfbfb; 
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+}
+
+.chatui-select-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #fbfbfb;
+    padding: 10px 0;
+}
+
+#chatui-select {
+    width: 350px;
+    background-color: #fbfbfb;
+    color: #333;
+    border: 2px solid #a2a2a2;
+    font-size: 16px;
+}
+
+#chatui-select:focus {
+    outline: none;
+}
+
+#chatui-select::-webkit-scrollbar {
+    display: none;
+}
+
+#chatui-select option {
+    background-color: #fbfbfb;
+    color: #333;
+}
+
+#chatui-select option:hover {
+    background-color: #fbfbfb;
+    color: #333;
+}
+
+s .chatui-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #a2a2a2;
+    background: #eee;
+    color: #666;
+}
+
+/* Used to remove tiny white lines in android devices; not sure if there is a better way */
+*,
+*::before,
+*::after {
+    box-sizing: content-box;
+}
+
+.chatui-chat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fbfbfb;
+}
+
+.chatui-chat::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatui-chat::-webkit-scrollbar-track {
+    background: #fbfbfb;
+}
+
+.chatui-chat::-webkit-scrollbar-thumb {
+    background: #ffe8d1;
+}
+
+.chatui-chat::-webkit-scrollbar-thumb:hover {
+    background: #6d6d6d;
+}
+
+.msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.msg:last-of-type {
+    margin: 0;
+}
+
+.msg-bubble {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 5px auto;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    color: black;
+    border: 2px solid #a2a2a2;
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-msg .msg-bubble {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.error-msg .msg-bubble {
+    background-color: #ffe8d1;
+    color: #f15959;
+}
+
+.init-msg .msg-bubble {
+    background-color: #ffe8d1;
+    color: #000000;
+}
+
+.right-msg .msg-bubble {
+    background-color: #fcf0e4;
+    color: #000000;
+}
+
+.chatui-inputarea {
+    display: flex;
+    padding: 10px;
+    border-top: none;
+    background-color: #fbfbfb;
+}
+
+.chatui-inputarea * {
+    padding: 10px;
+    border: 2px solid #a2a2a2;
+    border-radius: 3px;
+    font-size: 1em;
+    background-color: #F0F0F7; 
+    color: #333;
+}
+
+.chatui-input {
+    flex: 1;
+    background-color: #F0F0F7; 
+    color: #333;
+}
+
+.chatui-reset-btn {
+    margin-left: 10px;
+    background-color: #F0F0F7; /* Light background for all components */
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px; /* Set an appropriate height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure text is centered */
+}
+
+
+.chatui-reset-btn:hover {
+    background-color: #ffe8d1;
+}
+
+.chatui-send-btn {
+    margin-left: 10px;
+    background-color: #0c7a00; /* Light background for all components */
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px; /* Ensure adequate height for the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.chatui-send-btn:hover {
+    background-color: #03a33e;
+}

@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "LocalGPT: Local, Private, Free",
+  "version": "0.1.0",
+  "description": "It is like ChatGPT, but free and no data leaves your computer. Powered by WebLLM.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "style-src-elem 'self' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; script-src 'self' 'wasm-unsafe-eval'; default-src 'self' data:; connect-src 'self' data: https://huggingface.co https://cdn-lfs.huggingface.co https://cdn-lfs-us-1.huggingface.co https://raw.githubusercontent.com"
+  },
+  "action": {
+    "default_title": "LocalGPT"
+  },
+  "background": {
+    "service_worker": "background.ts",
+    "type": "module"
+  },
+  "web_accessible_resources": [
+    {
+        "resources": ["localGPT.html"],
+        "matches": ["<all_urls>"]
+    }
+]
+
+}
