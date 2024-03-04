@@ -2,7 +2,7 @@
 
 LocalGPT is an open-source Chrome extension that brings the power of conversational AI directly to your local machine, ensuring privacy and data control. Unlike other services that require internet connectivity and data transfer to remote servers, LocalGPT runs entirely on your computer, ensuring that no data leaves your device (Offline feature is available after first setup). It's free to use and leverages the capabilities of [WebLLM](https://github.com/mlc-ai/web-llm) to offer a seamless chatting experience using WebGPU.
 
-[WebLLM](https://github.com/mlc-ai/web-llm) by [MLC.AI](https://mlc.ai/) is the biggest contributor that provides the the infrastructure and most of the UI.
+[WebLLM](https://github.com/mlc-ai/web-llm) by [MLC.AI](https://mlc.ai/) is the biggest contributor that provides the infrastructure and most of the UI.
 
 
 ![LocalGPT Screenshot](screenshot.png)
